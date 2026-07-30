@@ -374,11 +374,11 @@ with st.sidebar:
     st.markdown("### 🇮🇹 Guida rapida")
     st.markdown(
         """
-- **Livello 1 — **
+- Livello 1 — 
   Ricordi il significato di questi verbi italiani?
-- **Livello 2 — **
+- Livello 2 — 
   Italiano ⇄ Inglese: indovina la traduzione.
-- **Livello 3 — **
+- Livello 3 — 
   Indovina il verbo dalle emoji/immagine.
         """
     )
@@ -398,7 +398,7 @@ with st.sidebar:
 # ==============================================================================
 # TAB DEI 3 LIVELLI
 # ==============================================================================
-tab1, tab2, tab3 = st.tabs(["📖 Livello 1", "🔤 Livello 2", "🖼️ Livello 3"])
+tab1, tab2, tab3 = st.tabs(["🔤 Livello 1", "📖 Livello 2", "✈️ Livello 3"])
  
 # ------------------------------------------------------------------ LIVELLO 1
 with tab1:
