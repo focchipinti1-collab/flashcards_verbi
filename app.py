@@ -450,7 +450,7 @@ with tab1:
 with tab2:
     init_state("L2")
     st.markdown(
-        '<div class="level-caption">Indovina la traduzione, poi capovolgi la carta</div>',
+        '<div class="level-caption">Indovina la traduzione</div>',
         unsafe_allow_html=True,
     )
     v = current_verb("L2")
@@ -536,7 +536,7 @@ with tab3:
             <div class="flashcard card-l3">
                 <div class="badge badge-red">Quale verbo è?</div>
                 <div class="verb-emoji">{v['emoji']}</div>
-                <div class="verb-sub">Pensa al verbo, poi rivela la risposta 👇</div>
+                <div class="verb-sub">👇</div>
             </div>
             """,
             unsafe_allow_html=True,
