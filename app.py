@@ -374,18 +374,18 @@ with st.sidebar:
     st.markdown("### 🇮🇹 Guida rapida")
     st.markdown(
         """
-- **Livello 1 — Scheda verbo**
-  Infinito, gruppo, coniugazione (io), traduzione e frase d'esempio.
-- **Livello 2 — Traduzione**
+- **Livello 1 — **
+  Ricordi il significato di questi verbi italiani?
+- **Livello 2 — **
   Italiano ⇄ Inglese: indovina la traduzione.
-- **Livello 3 — Immagini**
+- **Livello 3 — **
   Indovina il verbo dalle emoji/immagine.
         """
     )
     st.markdown("---")
     direzione = st.radio(
         "Livello 2:",
-        ["🇮🇹 ➜ 🇬🇧 Italiano prima", "🇬🇧 ➜ 🇮🇹 Inglese prima", "🔀 Mista"],
+        ["🇮🇹 ➜ 🇬🇧", "🇬🇧 ➜ 🇮🇹", "🔀 Misto"],
         index=0,
     )
     st.markdown("---")
