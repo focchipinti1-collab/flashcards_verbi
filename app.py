@@ -463,10 +463,10 @@ with tab2:
     else:
         it_to_en = st.session_state["L2_dirs"][idx2]
 
-    fronte = v["eng"] if en_to_it else v["infinito"]
-    retro = v["infinito"] if it_to_en else v["eng"]
-    bandiera_fronte = "🇬🇧" if en_to_it else "🇮🇹"
-    bandiera_retro = "🇮🇹" if it_to_en else "🇬🇧"
+    fronte = v["infinito"] if it_to_en else v["eng"]
+    retro = v["eng"] if it_to_en else v["infinito"]
+    bandiera_fronte = "🇮🇹" if it_to_en else "🇬🇧"
+    bandiera_retro = "🇬🇧" if it_to_en else "🇮🇹"
  
     if not st.session_state["L2_show"]:
         st.markdown(
