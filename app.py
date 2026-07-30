@@ -465,8 +465,8 @@ with tab2:
 
     fronte = v["eng"] if en_to_it else v["infinito"]
     retro = v["infinito"] if it_to_en else v["eng"]
-    bandiera_fronte = "🇮🇹" if it_to_en else "🇬🇧"
-    bandiera_retro = "🇬🇧" if it_to_en else "🇮🇹"
+    bandiera_fronte = "🇬🇧" if en_to_it else "🇮🇹"
+    bandiera_retro = "🇮🇹" if it_to_en else "🇬🇧"
  
     if not st.session_state["L2_show"]:
         st.markdown(
