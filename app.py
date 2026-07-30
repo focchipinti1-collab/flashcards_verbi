@@ -434,8 +434,7 @@ with tab1:
                 <div class="badge badge-green">{v['gruppo']}</div>
                 <div class="verb-word">{v['infinito']}</div>
                 <div class="detail-line"><span class="detail-label">Traduzione:</span> {v['eng']}</div>
-                <div class="detail-line"><span class="detail-label">Io</span> → {v['io']}</div>
-                {sinonimi_html}
+                <div class="detail-line"><span class="detail-label">Io</span> → {v['io']}</div>{sinonimi_html}
                 <div class="example-box">
                     🇮🇹 {v['frase_it']}<br>
                     🇬🇧 {v['frase_en']}
