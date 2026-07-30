@@ -23,7 +23,7 @@ VERBI = [
      "eng": "to speak / to talk", "frase_it": "Parlo italiano e inglese.",
      "frase_en": "I speak Italian and English.", "emoji": "🗣️💬"},
     {"infinito": "abitare", "gruppo": "1ª coniugazione (-are)", "io": "abito",
-     "eng": "to live (reside)", "frase_it": "Abito in una piccola casa a Roma.",
+     "eng": "to live", "frase_it": "Abito in una piccola casa a Roma.",
      "frase_en": "I live in a small house in Rome.", "emoji": "🏠🔑"},
     {"infinito": "cantare", "gruppo": "1ª coniugazione (-are)", "io": "canto",
      "eng": "to sing", "frase_it": "Mi piace cantare sotto la doccia.",
@@ -32,8 +32,8 @@ VERBI = [
      "eng": "to play (an instrument)", "frase_it": "Suono il pianoforte da cinque anni.",
      "frase_en": "I've played the piano for five years.", "emoji": "🎸🎹"},
     {"infinito": "vivere", "gruppo": "2ª coniugazione (-ere)", "io": "vivo",
-     "eng": "to live (exist)", "frase_it": "Vivo in Italia.",
-     "frase_en": "I live in Italy.", "emoji": "🌍🏡"},
+     "eng": "to live", "frase_it": "Vivo in Italia.",
+     "frase_en": "I live in Italy.", "emoji": "🌍🏡","sinonimi": ["abitare"]},
     {"infinito": "prendere", "gruppo": "2ª coniugazione (-ere)", "io": "prendo",
      "eng": "to take", "frase_it": "Prendo l'autobus per andare al lavoro.",
      "frase_en": "I take the bus to go to work.", "emoji": "🚌✋"},
@@ -422,13 +422,19 @@ with tab1:
             unsafe_allow_html=True,
         )
     else:
+     sinonimi_html = ""
+if v.get("sinonimi"):
+    sinonimi_html = (
+        f'<div class="detail-line"><span class="detail-label">Sinonimi:</span> '
+        f'{", ".join(v["sinonimi"])}</div>'
+    )
         st.markdown(
             f"""
             <div class="flashcard card-l1">
                 <div class="badge badge-green">{v['gruppo']}</div>
                 <div class="verb-word">{v['infinito']}</div>
                 <div class="detail-line"><span class="detail-label">Traduzione:</span> {v['eng']}</div>
-                <div class="detail-line"><span class="detail-label">Io</span> → {v['io']}</div>
+                <div class="detail-line"><span class="detail-label">Io</span> → {v['io']}</div> {sinonimi_html} 
                 <div class="example-box">
                     🇮🇹 {v['frase_it']}<br>
                     🇬🇧 {v['frase_en']}
