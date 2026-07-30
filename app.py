@@ -43,7 +43,7 @@ VERBI = [
     {"infinito": "Mangiare", "gruppo": "1ª coniugazione (-are)", "io": "mangio",
      "eng": "to eat", "frase_it": "Mangio la pasta ogni giorno.",
      "frase_en": "I eat pasta every day.", "emoji": "🍕🍽️"},
-    {"infinito": "Cercare", "gruppo": "1ª coniugazione (-are)⚠️VERBO IN -CARE = tu cerchi", "io": "cerco",
+    {"infinito": "Cercare", "gruppo": "1ª coniugazione (-are)⚠️VERBO IN -CARE = tu CERCHI/noi CERCHIAMO", "io": "cerco",
      "eng": "to look for / to search", "frase_it": "Cerco un buon ristorante in centro.",
      "frase_en": "I'm looking for a good restaurant downtown.", "emoji": "🔍🗺️"},
     {"infinito": "Lavorare", "gruppo": "1ª coniugazione (-are)", "io": "lavoro",
