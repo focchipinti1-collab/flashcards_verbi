@@ -408,7 +408,7 @@ with tab1:
         unsafe_allow_html=True,
     )
     v = current_verb("L1")
- 
+
     if not st.session_state["L1_show"]:
         st.markdown(
             f"""
@@ -422,19 +422,20 @@ with tab1:
             unsafe_allow_html=True,
         )
     else:
-     sinonimi_html = ""
-if v.get("sinonimi"):
-    sinonimi_html = (
-        f'<div class="detail-line"><span class="detail-label">Sinonimi:</span> '
-        f'{", ".join(v["sinonimi"])}</div>'
-    )
+        sinonimi_html = ""
+        if v.get("sinonimi"):
+            sinonimi_html = (
+                f'<div class="detail-line"><span class="detail-label">Sinonimi:</span> '
+                f'{", ".join(v["sinonimi"])}</div>'
+            )
         st.markdown(
             f"""
             <div class="flashcard card-l1">
                 <div class="badge badge-green">{v['gruppo']}</div>
                 <div class="verb-word">{v['infinito']}</div>
                 <div class="detail-line"><span class="detail-label">Traduzione:</span> {v['eng']}</div>
-                <div class="detail-line"><span class="detail-label">Io</span> → {v['io']}</div> {sinonimi_html} 
+                <div class="detail-line"><span class="detail-label">Io</span> → {v['io']}</div>
+                {sinonimi_html}
                 <div class="example-box">
                     🇮🇹 {v['frase_it']}<br>
                     🇬🇧 {v['frase_en']}
@@ -443,7 +444,7 @@ if v.get("sinonimi"):
             """,
             unsafe_allow_html=True,
         )
- 
+
     render_footer_controls("L1")
  
 # ------------------------------------------------------------------ LIVELLO 2
