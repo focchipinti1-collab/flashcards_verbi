@@ -32,8 +32,8 @@ VERBI = [
      "eng": "to play (an instrument)", "frase_it": "Suono il pianoforte da cinque anni.",
      "frase_en": "I've played the piano for five years.", "emoji": "🎸🎹"},
     {"infinito": "vivere", "gruppo": "2ª coniugazione (-ere)", "io": "vivo",
-     "eng": "to live (exist)", "frase_it": "Vivo felice in Italia.",
-     "frase_en": "I live happily in Italy.", "emoji": "🌍❤️"},
+     "eng": "to live (exist)", "frase_it": "Vivo in Italia.",
+     "frase_en": "I live in Italy.", "emoji": "🌍🏡"},
     {"infinito": "prendere", "gruppo": "2ª coniugazione (-ere)", "io": "prendo",
      "eng": "to take", "frase_it": "Prendo l'autobus per andare al lavoro.",
      "frase_en": "I take the bus to go to work.", "emoji": "🚌✋"},
@@ -57,13 +57,13 @@ VERBI = [
      "frase_en": "I read a book before sleeping.", "emoji": "📖👓"},
     {"infinito": "vedere", "gruppo": "2ª coniugazione (-ere)", "io": "vedo",
      "eng": "to see", "frase_it": "Vedo il mare dalla finestra.",
-     "frase_en": "I see the sea from the window.", "emoji": "👀🌊"},
+     "frase_en": "I see the sea from the window.", "emoji": "👀"},
     {"infinito": "chiedere", "gruppo": "2ª coniugazione (-ere)", "io": "chiedo",
      "eng": "to ask", "frase_it": "Chiedo scusa per il ritardo.",
      "frase_en": "I apologize for being late.", "emoji": "❓🙋"},
     {"infinito": "credere", "gruppo": "2ª coniugazione (-ere)", "io": "credo",
      "eng": "to believe", "frase_it": "Credo che tu abbia ragione.",
-     "frase_en": "I believe you're right.", "emoji": "🙏💭"},
+     "frase_en": "I believe you're right.", "emoji": "💭"},
     {"infinito": "vincere", "gruppo": "2ª coniugazione (-ere)", "io": "vinco",
      "eng": "to win", "frase_it": "La mia squadra vince sempre.",
      "frase_en": "My team always wins.", "emoji": "🏆🥇"},
@@ -83,8 +83,8 @@ VERBI = [
      "eng": "to leave / to depart", "frase_it": "Domani parto per Firenze.",
      "frase_en": "Tomorrow I'm leaving for Florence.", "emoji": "✈️🧳"},
     {"infinito": "offrire", "gruppo": "3ª coniugazione (-ire)", "io": "offro",
-     "eng": "to offer", "frase_it": "Ti offro un gelato.",
-     "frase_en": "I'll treat you to an ice cream.", "emoji": "🎁🍦"},
+     "eng": "to offer", "frase_it": "Offro io!",
+     "frase_en": "It's on me!", "emoji": "🎁💰"},
     {"infinito": "finire", "gruppo": "3ª coniugazione (-ire, -isc-)", "io": "finisco",
      "eng": "to finish", "frase_it": "Finisco i compiti alle sei.",
      "frase_en": "I finish my homework at six.", "emoji": "✅🏁"},
@@ -270,7 +270,7 @@ st.markdown(
 st.markdown('<div class="tricolore-bar"></div>', unsafe_allow_html=True)
 st.markdown('<div class="app-title">Flashcards di Italiano</div>', unsafe_allow_html=True)
 st.markdown(
-    '<div class="app-subtitle">Impara i verbi italiani divertendoti! · Learn Italian verbs while having fun</div>',
+    '<div class="app-subtitle">Impara i verbi italiani!</div>',
     unsafe_allow_html=True,
 )
 st.markdown('<div class="deco-row">🍕 🏛️ 🍋 🚲 🎭 🍷 🎶</div>', unsafe_allow_html=True)
@@ -404,7 +404,7 @@ tab1, tab2, tab3 = st.tabs(["📖 Livello 1", "🔤 Livello 2", "🖼️ Livello
 with tab1:
     init_state("L1")
     st.markdown(
-        '<div class="level-caption">Scopri il verbo: significato, gruppo e un esempio pratico</div>',
+        '<div class="level-caption">Scopri il significato dei verbi</div>',
         unsafe_allow_html=True,
     )
     v = current_verb("L1")
@@ -552,7 +552,7 @@ with tab3:
  
 st.markdown(
     '<div style="text-align:center; margin-top:1.5rem; opacity:0.6; font-size:0.85rem;">'
-    'Fatto con ❤️ per chi impara l\'italiano · 🇮🇹</div>',
+    'Fatto con il ❤️ per chi impara l\'italiano · 🇮🇹</div>',
     unsafe_allow_html=True,
 )
  
