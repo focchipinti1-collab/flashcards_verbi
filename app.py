@@ -384,7 +384,7 @@ with st.sidebar:
     )
     st.markdown("---")
     direzione = st.radio(
-        "Direzione — Livello 2",
+        "Livello 2:",
         ["🇮🇹 ➜ 🇬🇧 Italiano prima", "🇬🇧 ➜ 🇮🇹 Inglese prima", "🔀 Mista"],
         index=0,
     )
@@ -416,7 +416,7 @@ with tab1:
                 <div class="badge badge-green">{v['gruppo']}</div>
                 <div class="verb-word">{v['infinito']}</div>
                 <div class="verb-emoji">{v['emoji']}</div>
-                <div class="verb-sub">Premi "Mostra risposta" per i dettagli 👇</div>
+                <div class="verb-sub">👇</div>
             </div>
             """,
             unsafe_allow_html=True,
